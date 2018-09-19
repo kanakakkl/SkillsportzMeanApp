@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="addSquadForm">
+      <div class="form-group">
+            <label class="col-md-4">Team_Seriesname</label>
+            <input type="text" class="form-control" formControlName="teamseries_name" name="teamseries_name"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Team_name</label>
+        <input type="text" class="form-control" formControlName="teamname" name="teamname"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Team_name_Mobile</label>
+        <input type="text" class="form-control" formControlName="teamname_mobile" name="teamname_mobile"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Squad List</label>
+        <textarea placeholder="Enter list with comma separator eg:: 'T Natarajan, Abhinav Mukund' " type="text" class="form-control" formControlName="squad_list" name="squad_list"></textarea>
+      </div>
+        <div class="form-group">
+          <button (click)="addSquad()" class="btn btn-primary">Create Squad</button>
+        </div>
+    </form>
+  </div>
+</div>
+<!-- 
+//
+teamseries_name
+teamname
+teamname_mobile
+"squad_list"
+-->

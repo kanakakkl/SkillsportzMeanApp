@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="addFixtureForm">
+      <div class="form-group">
+        <label class="col-md-4">Date</label>
+        <input type="datetime-local" class="form-control" formControlName="date" name="date"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">MatchId</label>
+        <input type="text" class="form-control" formControlName="match_id" name="match_id"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">MatchName</label>
+        <input type="text" class="form-control" formControlName="match_name" name="match_name"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">TeamA</label>
+        <input type="text" class="form-control" formControlName="team_a" name="team_a"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">TeamB</label>
+        <input type="text" class="form-control" formControlName="team_b" name="team_b"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">MatchType</label>
+        <input type="text" class="form-control" formControlName="match_type" name="match_type"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Stadium</label>
+        <input type="text" class="form-control" formControlName="stadium" name="stadium"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Local</label>
+        <input type="text" class="form-control" formControlName="local_time" name="local_time"/>
+      </div>
+        <div class="form-group">
+          <button (click)="addFixture()" class="btn btn-primary">Create Fixture</button>
+        </div>
+    </form>
+  </div>
+</div>
+<!-- 
+//Date
+match_id
+match_name
+team_a
+team_b
+match
+stadium
+//gmt
+local -->
